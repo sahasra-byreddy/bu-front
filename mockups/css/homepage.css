@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin:0px;
+  }
+  
+  
+  @media only screen and (min-width: 500px){
+  .hidden{
+      display:none;
+  }
+  
+  #desktopbar{
+      display:flex;
+      flex-direction: row;
+      background-color: orange;
+      justify-content: space-between;
+      width: 70%;
+      margin:auto;
+      float:right;
+      
+  }
+      
+  .dbar{
+      width: 20vh;
+      height: auto;
+  }
+  
+  .sidebar{
+      float:left;
+      background-color: #b5d4a1;
+      display:flex;
+      width:30%;
+      flex-direction: column;
+  }
+  
+  .sbar{
+      width:70%;
+      margin:auto;
+      margin-top:10vh;
+  }
+  
+  section{
+      display:flex;
+      background-color: #68b436;
+      width:70%;
+      height:auto;
+      justify-content: space-between;
+      background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+  
+  
+      
+  .leftsec{
+      display:flex;
+      flex-direction: column;
+  }
+  
+  #lizard{
+      width:20vw;
+      height: auto;
+      margin:auto;
+      margin-top:10vh;
+      margin-bottom:10vh;
+  }
+      
+  #line{
+      width:40vw;
+      height:auto;
+      margin-left:-10vw;
+      margin-top:20vh;
+  }
+  
+  #know{
+      width: 15vw;
+      height: auto;
+      margin-left: auto;
+      margin-right:auto;
+      margin-bottom: 2vh;
+  }
+  .mobile{
+      display:none;
+  }
+  
+  .desktop{
+      display:flex;
+  }
+  }
+  
+  @media only screen and (max-width: 500px) {
+  
+  #phonebar{
+    background-color: #ffffff;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;   
+  }
+      
+  .desktop{
+    display:none;
+  }
+  
+  .hidden{
+      display:none;
+  }
+  
+      
+  section{
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+    background-color: #68b436;
+    display: flex;
+    flex-direction: column;
+    margin-left:0px;
+    margin-right:0px;
+    height: 75vh;
+    margin-bottom:0px;
+    width:100vw;
+  }
+  
+  #info{
+    background-color: orange;
+    height:20vh;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top: -25px;
+    width:100vw;
+  }
+  
+  
+      
+  #logo{
+      height: auto;
+      width:20vh;
+      margin: auto;
+      margin-top:1vh;
+      margin-bottom:1vh;
+  }
+  
+  #menu{
+      height: auto;
+      width: 10vh;
+      margin: auto;
+      margin-top:1vh;
+      margin-bottom:1vh;
+  }
+      
+  #knowm{
+      width:40vh;
+      height: auto;
+      margin:auto;
+      margin-top: auto;
+  }
+  
+  #lizardm{
+     width: 40vh;
+     height: auto;
+     margin: auto;
+     margin-top: 3vh;
+  }
+  
+  
+  }
+  
