@@ -18,6 +18,7 @@ html, body {
       width: 70%;
       margin:auto;
       float:right;
+      height: 20vh;
       
   }
       
@@ -26,12 +27,14 @@ html, body {
       height: auto;
   }
   
-  .sidebar{
+  aside{
       float:left;
-      background-color: #b5d4a1;
+      background-color: #ffffff;
       display:flex;
       width:30%;
       flex-direction: column;
+      height: 90vh;
+      margin-bottom: 0;
   }
   
   .sbar{
@@ -44,7 +47,7 @@ html, body {
       display:flex;
       background-color: #68b436;
       width:70%;
-      height:auto;
+      height:70vh;
       justify-content: space-between;
       background-image: url(../assets/homepage/bg_mobile.png) ;
   }
@@ -60,6 +63,7 @@ html, body {
       width:20vw;
       height: auto;
       margin:auto;
+      margin-right: 10vw;
       margin-top:10vh;
       margin-bottom:10vh;
   }
@@ -85,16 +89,43 @@ html, body {
   .desktop{
       display:flex;
   }
+
+footer{
+    background-color: #ea0f81;
+    width: 100%;
+    height:10vh;
+    align-items: left;
+    margin:0;
+    float: left;
+}
+
+#partner{
+    margin-left:5vw;
+    display:flex;
+    flex-direction: row;
+}
+
+.sponsor{
+    height: 8vh;
+    width: auto;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
   }
   
   @media only screen and (max-width: 500px) {
   
   #phonebar{
     background-color: #ffffff;
-    display: flex;
-    justify-content:  space-around;
-    align-items: center;   
+    display: flex; 
+    justify-content: space-around;
+
   }
+
+
       
   .desktop{
     display:none;

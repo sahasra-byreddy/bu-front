@@ -2,7 +2,7 @@
 <html Lang="en">
     <head>
         <meta charset = "UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <title>Building u</title>
         <link rel ="stylesheet" href="css/homepage.css">
@@ -12,7 +12,7 @@
     
     <body>
         <div class = "section">
-          <nav class ="navbar">
+          <div class ="navbar">
           <!--bar/header for phone-->
            <div id ="phonebar">
             <div class="logo">
@@ -26,12 +26,12 @@
                 <a href="#">
                   <img src= "assets/homepage/hamburger_active.png" alt = "close menu" class='hidden'>
                 </a>
-            </div>
            </div>
+          </div>
 
               
           <!--bar/header for desktop-->
-            <div id="desktopbar">
+            <nav id="desktopbar">
               <div class="desktop">
                 <a href="#">
                   <img src= "assets/homepage/btn_01-resources.png" alt = "Resouces menu" class='dbar' >
@@ -62,7 +62,7 @@
                   <img src= "assets/homepage/btn_06-signup.png" alt = "Resouces menu" class='dbar'>
                 </a>
               </div>
-            </div>
+            </nav>
           </nav>
 
           <!--side bar for desktop-->
@@ -85,7 +85,7 @@
              <!--section of destop-->
             <!--div class="desktop" id="dsection"-->
                 <div class="leftsec desktop">
-                    <img src="assets/homepage/line.png" id="line">
+                    <img src="assets/homepage/line.png" alt="line" id="line">
                     <div id = 'info'>
                         <h1>We need to write here a little explanation.</h1>
                     </div>
@@ -111,25 +111,22 @@
                 <h1>We need to write here a little explanation.</h1>
             </div>
             <!--powerby-->
-            <div class="partners desktop">
-              <h2>Powered by</h2>
-              <ul>
-                <li>
-                  <a href="#">
-                    LOGO
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    LOGO
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    LOGO
-                  </a>
-                </li>
-              </ul>
+            <div class="desktop" id="partner">
+                <div>
+                  <h2 id="powerbyt">Powered by</h2>
+                </div>
+
+                <div class="sponsor" id="p1">
+                  <img src="assets/homepage/powerby.png" alt="sponsor">
+                </div>
+
+                <div class="sponsor" id="p2">
+                  <img src="assets/homepage/powerby.png" alt="sponsor">
+                </div>
+
+                <div class="sponsor" id="p3">
+                  <img src="assets/homepage/powerby.png" alt="sponsor">
+                </div>
             </div>  
           </footer>
         </div>
