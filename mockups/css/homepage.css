@@ -5,7 +5,7 @@ html, body {
   }
   
   
-  @media only screen and (min-width: 500px){
+  @media only screen and (min-width: 500px) {
   .hidden{
       display:none;
   }
@@ -27,7 +27,7 @@ html, body {
       height: auto;
   }
   
-  aside{
+  .sidebar{
       float:left;
       background-color: #ffffff;
       display:flex;
@@ -113,11 +113,22 @@ footer{
     margin-bottom: 1vh;
 }
 
+#listbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-  }
-  
-  @media only screen and (max-width: 500px) {
-  
+#listbar li{
+    display:inline-flex;
+    margin-right:2px;
+    height: 20vh;
+    width: auto;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
   #phonebar{
     background-color: #ffffff;
     display: flex; 
@@ -189,5 +200,4 @@ footer{
   }
   
   
-  }
-  
+}
