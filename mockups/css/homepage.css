@@ -18,12 +18,23 @@ html, body {
       width: 70%;
       margin:auto;
       float:right;
-      height: 20vh;
+      height: 17.5vh;
       
   }
+
+ 
+
+  #con{
+    margin-left: 5vw;
+  }
       
-  .dbar{
-      width: 20vh;
+  .sdbar{
+    width:22vh;
+    height:auto;
+  }
+
+  .bdbar{
+      width: 17vh;
       height: auto;
   }
   
@@ -47,7 +58,7 @@ html, body {
       display:flex;
       background-color: #68b436;
       width:70%;
-      height:70vh;
+      height:72.5vh;
       justify-content: space-between;
       background-image: url(../assets/homepage/bg_mobile.png) ;
   }

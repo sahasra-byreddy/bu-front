@@ -9,6 +9,10 @@ html, body {
   .hidden{
       display:none;
   }
+
+  .mobile{
+    display:none;
+  }
   
   #desktopbar{
       display:flex;
@@ -17,12 +21,23 @@ html, body {
       justify-content: space-between;
       width: 100%;
       margin:auto;
-      height: 20vh;
+      height: 17.5vh;
       
   }
-.dbar{
-      width: 20vh;
+
+  .sdbar{
+    width:22vh;
+    height:auto;
+  }
+
+  .bdbar{
+      width: 17vh;
       height: auto;
+  }
+  
+  
+  #con{
+    margin-left: 10vw;
   }
 
 #listbar{
@@ -30,6 +45,7 @@ html, body {
     margin: auto;
     padding: 0;
     justify-content: space-around;
+    display:inline-flex;
     
 }
 
@@ -43,45 +59,49 @@ html, body {
     width:30vh;
     height:auto;
     margin-right: 5vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
   section{
       display:flex;
+      flex-direction:row;
       background-color: #68b436;
       width:100%;
-      height:70vh;
+      height:72.5vh;
       background-image: url(../assets/dollarpage/background.png) ;
       justify-content: space-between;
   }
 
-.sec{
-    justify-content: space-between;
-}
-      
+  #bothsec{
+    display:flex;
+    flex-direction:row;
+  }
+   
 #s4ytdollar{
-    width:23vw;
-    height:auto;
+    width:auto;
+    height:65vh;
     margin-top:2vh;
-    margin-bottom: 2vh;
+
 }
 
 #click{
     width:auto;
-    height: 13vh;
+    height: 20vh;
     margin-left:-4vw;
-    margin-top:30vh;
+    margin-bottom:2vh;
 }
 
 #leftsec{
     display:flex;
     flex-direction: row;
     margin-left:5vw;
+    margin-top:2vh;
 }
 
 #midsec{
     width:30vw;
-    margin: auto;
+    margin-right: 10vw;
+    margin-top:10vh;
 }
 
 .bword{
@@ -136,5 +156,126 @@ footer{
 
 #sectag{
     margin:0px;
+    margin-top: -10vh;
 }
   }
+
+  @media only screen and (max-width: 500px){
+    .desktop{
+        display:none;
+    }
+    
+    #phonebar{
+    background-color: green;
+    display: flex; 
+    justify-content: space-around;
+    height:12vh;
+  }
+
+    #seclogo{
+        width:auto;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:0px;
+        margin-bottom:0px;
+
+    }
+
+    #menu{
+      width:auto ;
+      height: 10vh;
+      margin:auto;
+      margin-top:1vh;
+      margin-bottom:1vh;
+  }
+
+    #s4ytmobile{
+        width:60vw;
+        height:auto;
+        margin-top: 2vh;
+        margin-left:0vw;
+    }
+
+    section{
+        background-image: url(../assets/dollarpage/background.png) ;
+        background-color: #68b436;
+        display:flex;
+        flex-direction: column;
+        margin-left:0px;
+        margin-right:0px;
+        height: 88vh;
+        margin-bottom:0px;
+        width:100vw;
+        align-items: center;
+  }
+
+ 
+
+    
+    #boat{
+        width:60vw;
+        height: auto;
+        margin:auto;
+        margin-left:15vw;
+        margin-top: 7.5vh;
+       
+    }
+
+    #midsec{
+        align-items: center;
+        width:50vw;
+        float:left;
+        margin-left:5vw;
+        margin-top: 5vh;
+    }
+
+
+    .tag{
+        width:30vw;
+        margin:0px;
+    }
+
+    #rightsec{
+        width:40vw;
+        margin-top:5vh;
+
+    }
+
+    #bothsec{
+        display:flex;
+        flex-direction: row;
+
+    }
+
+    .texttag{
+        font-size:2.5vw;
+        margin:0px;
+    }
+
+    hr{
+        width:70%;
+        float:left;
+    }
+
+    .sword{
+        margin-top:2.5vh;
+        width:40vw;
+        font-size: 2.5vw;
+        margin-top: 3vh;
+    }
+
+    #bword{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    #sectag{
+        margin-top:10vh;
+    }
+
+    .secword{
+        margin-top: 5vh;
+    }
+
+}
