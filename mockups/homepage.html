@@ -11,36 +11,16 @@
 
     
     <body>
-          <!--bar/header for phone-->
-          <div id="head">
-           <div id ="phonebar">
-            <!--div class="logo"-->
-              <!--img src = "assets/homepage/logo_white.png" alt="buildingu logo" class ="hidden"--><!--???-->
-              
-            <!--/div--> 
-            <!--div class = "mobile"-->
-                      <!--side bar for desktop-->
-             <div class="sidebar">
-              <!--img src="assets/homepage/logo.png" alt="Logo" class = ''-->
-               <img src ="assets/homepage/logo.png" alt='buildingu logo' id = "logo" class="upbar sbar">
-               <img src="assets/homepage/peacock.png" alt="Mr. Turkey" class = 'sbar desktop'>
-               <p class = 'sbar desktop'><cite>Gobble, Gobble, Gobble, Gobble...</cite>Mr. Turkey</p>
-             </div>
-             <a href="#">
-                  <img src= "assets/homepage/hamburger.png" alt = "open menu" id="menu" class="upbar mobile">
-             </a>
-                <!--a href="#">
-                  <img src= "assets/homepage/hamburger_active.png" alt = "close menu" class='hidden'>
-                </a-->
-           <!--/div-->
-          </div>
-
-          </div>
 
               
           <!--bar/header for desktop-->
             <nav id="desktopbar" class="desktop">
              <ul id="listbar">
+              <li class="desktop">
+                <a href="./homepage.html">
+                  <img src= "assets/homepage/logo_white.png" alt = "Resouces menu" id="wlogo" class='desktop'>
+                </a>
+              </li>
               <li class="desktop">
                 <a href="#">
                   <img src= "assets/homepage/btn_01-resources.png" alt = "Resouces menu" class='sdbar' >
@@ -68,19 +48,45 @@
               </li>
               <li class="desktop">
                 <a href="#">
-                  <img src= "assets/homepage/btn_06-signup.png" alt = "Resouces menu" class='bdbar'>
+                  <img src= "assets/homepage/btn_06-signup.png" alt = "Resouces menu" class='bdbar' id="signin">
                 </a>
               </li>
              </ul>
             </nav>
 
-          
-
+                    <!--bar/header for phone-->
+                    <div id="head">
+                      <div id ="phonebar">
+                       <!--div class="logo"-->
+                         <!--img src = "assets/homepage/logo_white.png" alt="buildingu logo" class ="hidden"--><!--???-->
+                         
+                       <!--/div--> 
+                       <!--div class = "mobile"-->
+                                 <!--side bar for desktop-->
+                        <div class="sidebar">
+                         <!--img src="assets/homepage/logo.png" alt="Logo" class = ''-->
+                          <img src ="assets/homepage/logo.png" alt='buildingu logo' id = "logo" class="upbar sbar">
+                          <img src="assets/homepage/peacock.png" alt="Mr. Turkey" class = 'sbar desktop'>
+                          <p class = 'sbar desktop' id="sbarword"><cite>Gobble, Gobble, Gobble, Gobble...</cite>Mr. Turkey</p>
+                        </div>
+                        <a href="#">
+                             <img src= "assets/homepage/hamburger.png" alt = "open menu" id="menu" class="upbar mobile">
+                        </a>
+                           <!--a href="#">
+                             <img src= "assets/homepage/hamburger_active.png" alt = "close menu" class='hidden'>
+                           </a-->
+                      <!--/div-->
+                     </div>
+           
+                     </div>
+           
+          <div id="seperatetop">
+          </div>
 
 
         
           <!--Section--green part-->
-          <section class="desktop">
+          <section class="desktop" id="homesection">
            <!--
            <div class = "title">
             <h1>Building-u</h1>
@@ -103,6 +109,72 @@
             <!--/div-->
           </section>
 
+          <section id="s4ytsection" class="desktop">
+            <div id = 'topsec' class='mobile'>
+               <img src = "assets/dollarpage/logo_dollarsm.png" alt="idkyet" id='s4ytmobile'>
+           </div>
+            <div id = "leftsec" class="sec desktop">
+                   <img src = "assets/dollarpage/logo_dollars.png" alt="idkyet" id="s4ytdollar">
+                   <img src = "assets/dollarpage/click-me.png" alt="idkyet" id="click">
+           </div> 
+           
+           <div id='bothsec'>  
+               <div id = "midsec" class="sec">
+                   <p class='bword'>$4YT or dollars for your thoughts</p>
+                   <hr>
+                   <p class='sword'>Is our annual free funding event for high schoolers from all over the world</p>
+
+                   <p class='bword secword'>Contribute to $4YT</p>
+                   <hr>
+                   <p class='sword'>Our teams of high school students build the game and develop the campaigns to produce it.</p>
+
+                   <img src = "assets/dollarpage/img_weare-05.png" alt="idkyet" id="boat">
+               </div>  
+               <div id = "rightsec" class="sec">
+                   <img src = "assets/dollarpage/btn-contrib-normal.png" alt="idkyet" class="tag">
+                   <div id='sectag'>
+                       <p class="texttag">Visit our</p>
+                       <img src = "assets/dollarpage/btn-more_info-normal.png" alt="idkyet" class="tag">
+                       <p class="texttag">To help them reach this year funding goal</p>
+                   </div>
+              </div>
+           </div>
+       </section>
+       
+
+<!--for testing-->
+       <section id="s4ytsection" class="desktop">
+        <div id = 'topsec' class='mobile'>
+           <img src = "assets/dollarpage/logo_dollarsm.png" alt="idkyet" id='s4ytmobile'>
+       </div>
+        <div id = "leftsec" class="sec desktop">
+               <img src = "assets/dollarpage/logo_dollars.png" alt="idkyet" id="s4ytdollar">
+               <img src = "assets/dollarpage/click-me.png" alt="idkyet" id="click">
+       </div> 
+       
+       <div id='bothsec'>  
+           <div id = "midsec" class="sec">
+               <p class='bword'>$4YT or dollars for your thoughts</p>
+               <hr>
+               <p class='sword'>Is our annual free funding event for high schoolers from all over the world</p>
+
+               <p class='bword secword'>Contribute to $4YT</p>
+               <hr>
+               <p class='sword'>Our teams of high school students build the game and develop the campaigns to produce it.</p>
+
+               <img src = "assets/dollarpage/img_weare-05.png" alt="idkyet" id="boat">
+           </div>  
+           <div id = "rightsec" class="sec">
+               <img src = "assets/dollarpage/btn-contrib-normal.png" alt="idkyet" class="tag">
+               <div id='sectag'>
+                   <p class="texttag">Visit our</p>
+                   <img src = "assets/dollarpage/btn-more_info-normal.png" alt="idkyet" class="tag">
+                   <p class="texttag">To help them reach this year funding goal</p>
+               </div>
+          </div>
+       </div>
+   </section>
+
           <section class="mobile">  
             <!--section of mobile-->
             <!--div class="mobile" id="msection"-->
@@ -112,6 +184,9 @@
                 
           </section>
             
+
+          <div id="seperatebottom"></div>
+          
           <!--Not done-->
           <footer>
             <div id = 'info' class='mobile'>

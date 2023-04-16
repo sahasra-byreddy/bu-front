@@ -25,6 +25,13 @@ html, body {
       
   }
 
+  #wlogo{
+    width:30vh;
+    height:auto;
+    margin-right: 5vw;
+    margin-top: 1vh;
+}
+
   .sdbar{
     width:22vh;
     height:auto;
@@ -72,7 +79,7 @@ html, body {
       justify-content: space-between;
   }
 
-  #bothsec{
+#bothsec{
     display:flex;
     flex-direction:row;
   }
