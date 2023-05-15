@@ -18,7 +18,9 @@ html, body {
     display:flex;
 }
 
-  
+hr{
+  z-index: 1;
+}
 
 #bar{
       display:flex;
@@ -26,13 +28,12 @@ html, body {
       background-color: orange;
       justify-content: space-between;
       width: 100%;
-      margin:auto;
-      margin-left:0vw;
-      margin-right:0vw;
       float:right;
       height: 15vh;
       position:fixed;
-      
+      top:0;
+      left:0;
+      z-index: 2;
   }
 
 #bar-bulogo{
@@ -71,7 +72,8 @@ html, body {
       flex-direction: column;
       height: 90vh;
       margin-bottom: 0;
-      position: absolute;
+      position: relative;
+      z-index: 9;
   }
   
 .home-sbar{
@@ -116,11 +118,16 @@ html, body {
       margin-bottom:10vh;
   }
       
+#home-section-text{
+    margin-left: 5vw;
+}
+
   #home-section-line{
       width:40vw;
       height:auto;
       margin-left:-10vw;
       margin-top:20vh;
+      z-index:10;
   }
   
   #home-section-know{
@@ -330,6 +337,7 @@ footer{
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: 10;
 }
 
 #partner{
