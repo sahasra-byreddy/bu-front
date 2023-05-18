@@ -1,444 +1,478 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    margin:0px;
-  }
-  
-  
-@media only screen and (min-width: 500px) {
-  .hidden{
-      display:none;
-  }
+  height: 100%;
+  width: 100%;
+  margin:0px;
+}
 
-  .mobile{
+@font-face {
+  font-family: "NightZone";
+  src: url("fonts/NightZone.ttf")format('truetype');
+}
+
+@font-face {
+  font-family: "coolvetica";
+  src: url("fonts/coolvetica.otf")format('opentype');
+}
+
+
+
+@media only screen and (min-width: 500px) {
+
+
+.hidden{
     display:none;
 }
 
+.mobile{
+  display:none;
+}
+
 .desktop{
-    display:flex;
+  display:flex;
 }
 
 hr{
-  z-index: 1;
+z-index: 1;
 }
 
 #bar{
-      display:flex;
-      flex-direction: row;
-      background-color: orange;
-      justify-content: space-between;
-      width: 100%;
-      float:right;
-      height: 15vh;
-      position:fixed;
-      top:0;
-      left:0;
-      z-index: 2;
-  }
+    display:flex;
+    flex-direction: row;
+    background-color: orange;
+    justify-content: space-between;
+    width: 100%;
+    float:right;
+    height: 15vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+}
 
 #bar-bulogo{
-    width:25vh;
-    height:auto;
-    margin-right: 10vw;
-    margin-top: 1vh;
-    margin-left:10vw;
+  width:25vh;
+  height:auto;
+  margin-right: 10vw;
+  margin-top: 1vh;
+  margin-left:10vw;
 }
-     
+   
 .bar-smallbaricon{
-    width:20vh;
-    height:auto;
-  }
+  width:20vh;
+  height:auto;
+}
 
 .bar-bigbaricon{
-      width: 15vh;
-      height: auto;
-  }
-
-#bar-con{
-    margin-left: 5vw;
-    margin-right:0vw;
-  }
-  
-#bar-signin{
-    margin-right:2vw;
-    margin-left:0vw
-  }
-
-.home-desktopsidebar{
-      float:left;
-      background-color: #ffffff;
-      display:flex;
-      width:30%;
-      flex-direction: column;
-      height: 90vh;
-      margin-bottom: 0;
-      position: relative;
-      z-index: 9;
-  }
-  
-.home-sbar{
-      width:60%;
-      margin:auto;
-      margin-top:5vh;
-  }
-  
-#home-sbar-word{
-    margin-top:0vh;
-  }
-
-    #seperatetop{
-    width:70%;
-    margin-left:30vw;
-    height:15vh;
-  }
-  
-  #homesection{
-      display:flex;
-      background-color: #68b436;
-      width:70%;
-      height:75vh;
-      justify-content: space-between;
-      background-image: url(../assets/homepage/bg_mobile.png) ;
-      margin-left:30%;
-  }
-  
-
-      
-  .home-leftsec{
-      display:flex;
-      flex-direction: column;
-  }
-  
-  #home-section-lizard{
-      width:20vw;
-      height: auto;
-      margin:auto;
-      margin-right: 10vw;
-      margin-top:10vh;
-      margin-bottom:10vh;
-  }
-      
-#home-section-text{
-    margin-left: 5vw;
+    width: 15vh;
+    height: auto;
 }
 
-  #home-section-line{
-      width:40vw;
-      height:auto;
-      margin-left:-10vw;
-      margin-top:20vh;
-      z-index:10;
-  }
-  
-  #home-section-know{
-      width: 15vw;
-      height: auto;
-      margin-left: auto;
-      margin-right:auto;
-      margin-bottom: 2vh;
-  }
+#bar-con{
+  margin-left: 5vw;
+  margin-right:0vw;
+}
 
-  #resourecssection{
+#bar-signin{
+  margin-right:2vw;
+  margin-left:0vw
+}
+
+.home-desktopsidebar{
+    float:left;
+    background-color: #ffffff;
     display:flex;
-    flex-direction:column;
+    width:30%;
+    flex-direction: column;
+    height: 90vh;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 9;
+}
+
+.home-sbar{
+    width:60%;
+    margin:auto;
+    margin-top:5vh;
+}
+
+#home-sbar-word{
+  margin-top:0vh;
+}
+
+  #seperatetop{
+  width:70%;
+  margin-left:30vw;
+  height:15vh;
+}
+
+#homesection{
+    display:flex;
     background-color: #68b436;
-    width:100%;
-    height:72.5vh;
-    background-image: url(../assets/dollarpage/background.png) ;
+    width:70%;
+    height:75vh;
     justify-content: space-between;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+    margin-left:30%;
+}
+
+
+    
+.home-leftsec{
+    display:flex;
+    flex-direction: column;
+}
+
+#home-section-lizard{
+    width:20vw;
+    height: auto;
+    margin:auto;
+    margin-right: 10vw;
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+    
+#home-section-text{
+  margin-left: 5vw;
+  font-family: 'coolvetica','coolvetica',serif;
+  color: white;
+  font-weight: 2;
+  font-size: 5vh;
+  
+}
+
+#home-section-line{
+    width:40vw;
+    height:auto;
+    margin-left:-10vw;
+    margin-top:20vh;
+    z-index:10;
+}
+
+#home-section-know{
+    width: 15vw;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 2vh;
+}
+
+#resourecssection{
+  display:flex;
+  flex-direction:column;
+  background-color: #68b436;
+  width:100%;
+  height:72.5vh;
+  background-image: url(../assets/dollarpage/background.png) ;
+  justify-content: space-between;
 }
 
 #resources-titletext{
-    font-size:7vh;
-    margin:0vh;
-    padding:0vh;
-    margin-left:2vw;
+  font-size:7vh;
+  margin:0vh;
+  padding:0vh;
+  margin-left:2vw;
+  font-family: 'coolvetica','coolvetica',serif;
+  color: white;
 }
 
 #resources-titleline{
-    width: 50%;
-    margin-left:10vw;
-    border: 0.5vh solid white;
+  width: 50%;
+  margin-left:10vw;
+  border: 0.5vh solid white;
 }
 
 
 #resources-title{
-    width: 70vw;
-    height: 20vh;
+  width: 70vw;
+  height: 20vh;
 }
 
 #resources-content{
-    display: flex;
-    flex-direction:row;
-    margin-left:5vw;
-    margin-bottom:2vh;
+  display: flex;
+  flex-direction:row;
+  margin-left:5vw;
+  margin-bottom:2vh;
 }
 
 #resources-lizard{
-    width: 22.5vw;
-    height: auto;
+  width: 22.5vw;
+  height: auto;
 }
 
 #resources-textbox{
-    margin-left: 5vw;
-    margin-top:20vh;
+  margin-left: 5vw;
+  margin-top:20vh;
 }
 
 #resources-box{
-    width: 25vw;
-    height: auto;
-    
+  width: 25vw;
+  height: auto;
+  
 }
 
 #resources-textboxtext{
-    margin-top:-13vh
+  margin-top:-13vh;
+  font-weight: 2;
+  font-family: 'coolvetica','coolvetica',serif;
 }
 
 #resources-bulletwrapper{
-    display: block;
-    margin-left:-10vw;
+  display: block;
+  margin-left:-10vw;
 }
 
 .resources-bullets{
-    width: auto;
-    height: 12.5vh;
-    margin-bottom:2.5vh;
+  width: auto;
+  height: 12.5vh;
+  margin-bottom:2.5vh;
 }
 
 
 #talksection{
-      display:flex;
-      flex-direction: column;
-      background-color: #68b436;
-      width:100%;
-      height:72.5vh;
-      background-image: url(../assets/homepage/bg_mobile.png)  ;
-      justify-content: space-between;
-  }
-
-
-#talk-titletext{
-    font-size:7vh;
-    margin:0vh;
-    padding:0vh;
-    margin-left:2vw;
-}
-
-#talk-titleline{
-    width: 50%;
-    margin-left:10vw;
-    border: 0.5vh solid white;
-}
-
-#talk-contents{
     display:flex;
-    flex-direction:row;
-    margin-right:5vw;
-}
-
-#talk-dog{
-    width:30vw;
-    height:30vw;   
-}
-
-#talk-bulletwrapper{
-    display:inline-block;
-    margin-left:5vw;
-}
-
-.talk-bullets{
-    height: 7.5vh;
-    width: auto;
-    margin:2vh;
-}
-
-#talk-talk{
-    height:20vh;
-    width:auto;
-}
-
-#s4ytsection{
-    display:flex;
-    flex-direction:row;
+    flex-direction: column;
     background-color: #68b436;
     width:100%;
     height:72.5vh;
-    background-image: url(../assets/dollarpage/background.png) ;
+    background-image: url(../assets/homepage/bg_mobile.png)  ;
     justify-content: space-between;
 }
 
-#s4yt-leftsec{
-  display:flex;
-  flex-direction: row;
-  margin-left:5vw;
-  margin-top:2vh;
+
+#talk-titletext{
+  font-size:7vh;
+  margin:0vh;
+  padding:0vh;
+  margin-left:2vw;
+  font-family: 'coolvetica','coolvetica',serif;
+  color: white;
 }
- 
-#s4yt-paper{
+
+#talk-titleline{
+  width: 50%;
+  margin-left:10vw;
+  border: 0.5vh solid white;
+}
+
+#talk-contents{
+  display:flex;
+  flex-direction:row;
+  margin-right:5vw;
+}
+
+#talk-dog{
+  width:30vw;
+  height:30vw;   
+}
+
+#talk-bulletwrapper{
+  display:inline-block;
+  margin-left:5vw;
+}
+
+.talk-bullets{
+  height: 7.5vh;
+  width: auto;
+  margin:2vh;
+}
+
+#talk-talk{
+  height:20vh;
   width:auto;
-  height:65vh;
-  margin-top:2vh;
+}
+
+#s4ytsection{
+  display:flex;
+  flex-direction:row;
+  background-color: #68b436;
+  width:100%;
+  height:72.5vh;
+  background-image: url(../assets/dollarpage/background.png) ;
+  justify-content: space-between;
+}
+
+#s4yt-leftsec{
+display:flex;
+flex-direction: row;
+margin-left:5vw;
+margin-top:2vh;
+}
+
+#s4yt-paper{
+width:auto;
+height:65vh;
+margin-top:2vh;
 
 }
 
 #s4yt-click{
-  width:auto;
-  height: 20vh;
-  margin-left:-4vw;
-  margin-bottom:2vh;
+width:auto;
+height: 20vh;
+margin-left:-4vw;
+margin-bottom:2vh;
 }
 
 
 #s4yt-midsec{
-  width:30vw;
-  margin-right: 10vw;
-  margin-top:5vh;
+width:30vw;
+margin-right: 10vw;
+margin-top:5vh;
 }
 
 .s4yt-midsec-bigword{
-  font-size: 2vw;
-  margin-bottom: 0;
+font-size: 2vw;
+margin-bottom: 0;
+font-family: "NightZone","NightZone",serif;
+color: white;
 }
 
 .s4yt-midsec-smallword{
-  font-size: 1.2vw;
+font-size: 1.2vw;
 }
-    
+  
 #s4yt-boat{
-  width:20vw;
-  height:auto;
+width:20vw;
+height:auto;
 }
 
 #s4yt-rightsec{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
 }
 
 .s4yt-tag{
-  width:15vw;
-  height:auto;
-  justify-content: space-around;
-  margin-right:5vw;
+width:15vw;
+height:auto;
+justify-content: space-around;
+margin-right:5vw;
 }
 
 #seperatebottom{
-    height:10vh;
-    width:100%;
+  height:10vh;
+  width:100%;
 }
 
 footer{
-    background-color: #ea0f81;
-    width: 100%;
-    height:10vh;
-    align-items: left;
-    margin:0;
-    float: left;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
+  background-color: #ea0f81;
+  width: 100%;
+  height:10vh;
+  align-items: left;
+  margin:0;
+  float: left;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 #partner{
-    margin-left:5vw;
-    display:flex;
-    flex-direction: row;
+  margin-left:5vw;
+  display:flex;
+  flex-direction: row;
+}
+
+#powerbyt{
+  font-family: 'coolvetica','coolvetica',serif;
+  color: white;
+  font-size: 5vh;
+  font-weight: 2;
+  margin-bottom: 2.5vh;
 }
 
 .sponsor{
-    height: 8vh;
-    width: auto;
-    margin: auto;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+  height: 8vh;
+  width: auto;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 #listbar{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #listbar li{
-    display:inline-flex;
-    margin-right:2px;
-    height: 20vh;
-    width: auto;
+  display:inline-flex;
+  margin-right:2px;
+  height: 20vh;
+  width: auto;
 }
 }
 
 
 @media only screen and (max-width: 500px) {
-  #home-phonebar{
-    background-color: #ffffff;
-    display: flex; 
-    justify-content: space-around;
+#home-phonebar{
+  background-color: #ffffff;
+  display: flex; 
+  justify-content: space-around;
 
-  }
+}
 
-      
-  .desktop{
+    
+.desktop{
+  display:none;
+}
+
+.hidden{
     display:none;
-  }
-  
-  .hidden{
-      display:none;
-  }
-  
-      
-  section{
-    background-image: url(../assets/homepage/bg_mobile.png) ;
-    background-color: #68b436;
-    display: flex;
-    flex-direction: column;
-    margin-left:0px;
-    margin-right:0px;
-    height: 75vh;
-    margin-bottom:0px;
-    width:100vw;
-  }
-  
-  #info{
-    background-color: orange;
-    height:20vh;
-    margin-left:0px;
-    margin-right:0px;
-    margin-top: -25px;
-    width:100vw;
-  }
-  
-  
-      
-  #logo{
-      height: auto;
-      width:20vh;
-      margin: auto;
-      margin-top:1vh;
-      margin-bottom:1vh;
-  }
-  
-  #menu{
-      height: auto;
-      width: 10vh;
-      margin: auto;
-      margin-top:1vh;
-      margin-bottom:1vh;
-  }
-      
-  #knowm{
-      width:40vh;
-      height: auto;
-      margin:auto;
-      margin-top: auto;
-  }
-  
-  #lizardm{
-     width: 40vh;
-     height: auto;
-     margin: auto;
-     margin-top: 3vh;
-  }
-  
-  
+}
+
+    
+section{
+  background-image: url(../assets/homepage/bg_mobile.png) ;
+  background-color: #68b436;
+  display: flex;
+  flex-direction: column;
+  margin-left:0px;
+  margin-right:0px;
+  height: 75vh;
+  margin-bottom:0px;
+  width:100vw;
+}
+
+#info{
+  background-color: orange;
+  height:20vh;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top: -25px;
+  width:100vw;
+}
+
+
+    
+#logo{
+    height: auto;
+    width:20vh;
+    margin: auto;
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+
+#menu{
+    height: auto;
+    width: 10vh;
+    margin: auto;
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+    
+#knowm{
+    width:40vh;
+    height: auto;
+    margin:auto;
+    margin-top: auto;
+}
+
+#lizardm{
+   width: 40vh;
+   height: auto;
+   margin: auto;
+   margin-top: 3vh;
+}
+
+
 }
