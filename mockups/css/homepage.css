@@ -46,7 +46,7 @@ z-index: 1;
     position:fixed;
     top:0;
     left:0;
-    z-index: 2;
+    z-index: 4;
 }
 
 #bar-bulogo{
@@ -85,8 +85,9 @@ z-index: 1;
     flex-direction: column;
     height: 90vh;
     margin-bottom: 0;
-    position: relative;
+    position: absolute;
     z-index: 9;
+    top:0;
 }
 
 .home-sbar{
@@ -159,10 +160,10 @@ z-index: 1;
 #resourecssection{
   display:flex;
   flex-direction:column;
-  background-color: #68b436;
+  background-color: #008dd2;
   width:100%;
   height:72.5vh;
-  background-image: url(../assets/dollarpage/background.png) ;
+  background-image: url(../assets/homepage/bg_mobile.png);
   justify-content: space-between;
 }
 
@@ -176,15 +177,18 @@ z-index: 1;
 }
 
 #resources-titleline{
-  width: 50%;
+  width: 50vw;
   margin-left:10vw;
   border: 0.5vh solid white;
+  color: #ffffff;
+  opacity:100%;
 }
 
 
 #resources-title{
   width: 70vw;
   height: 20vh;
+  z-index:3;
 }
 
 #resources-content{
@@ -192,6 +196,7 @@ z-index: 1;
   flex-direction:row;
   margin-left:5vw;
   margin-bottom:2vh;
+  z-index:3;
 }
 
 #resources-lizard{
@@ -227,13 +232,23 @@ z-index: 1;
   margin-bottom:2.5vh;
 }
 
+#resources-bg{
+  border-bottom: 72.5vh solid #ea0f81;
+	border-left: 0px solid transparent;
+	border-right: 50vh solid transparent;
+	height: 0;
+	width: 50vw;
+  position: absolute;
+  z-index:2;
+}
+
 #bandbsection{
   display:flex;
   flex-direction:column;
-  background-color: #68b436;
+  background-color: #ea0f81;
   width:100%;
   height:72.5vh;
-  background-image: url(../assets/dollarpage/background.png) ;
+  background-image: url(../assets/homepage/bg_mobile.png) ;
   justify-content: space-between;
 }
 
@@ -247,22 +262,25 @@ z-index: 1;
 }
 
 #bandb-titleline{
-  width: 50%;
+  width: 50vw;
   margin-left:10vw;
   border: 0.5vh solid white;
+  color: #ffffff;
+  opacity:100%;
 }
 
 #bandb-title{
   width: 70vw;
   height: 20vh;
   margin-bottom: 0;
- 
+  z-index:3;
 }
 
 #bandb-contents{
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 15vh;
+  z-index:3;
 }
 
 #bandb-iconswrapper{
@@ -296,6 +314,17 @@ z-index: 1;
   width:20vw;
 }
 
+#bandb-bg{
+  border-bottom: 72.5vh solid #68b436;
+	border-left: 50vh solid transparent;
+	border-right: 0vh solid transparent;
+	height: 0;
+	width: 50vw;
+  position: absolute;
+  z-index:2;
+  right:0;
+}
+
 #talksection{
     display:flex;
     flex-direction: column;
@@ -317,15 +346,22 @@ z-index: 1;
 }
 
 #talk-titleline{
-  width: 50%;
+  width: 50vw;
   margin-left:10vw;
-  border: 0.5vh solid white;
+  border: 0.5vh solid #ffffff;
+  color: #ffffff;
+  opacity:100%;
+}
+
+#talk-title{
+  z-index:3;
 }
 
 #talk-contents{
   display:flex;
   flex-direction:row;
   margin-right:5vw;
+  z-index:3;
 }
 
 #talk-dog{
@@ -347,6 +383,16 @@ z-index: 1;
 #talk-talk{
   height:20vh;
   width:auto;
+}
+
+#talk-bg{
+  border-bottom: 72.5vh solid #008dd2;
+	border-left: 0px solid transparent;
+	border-right: 50vh solid transparent;
+	height: 0;
+	width: 50vw;
+  position: absolute;
+  z-index:2;
 }
 
 #s4ytsection{
@@ -468,6 +514,8 @@ footer{
   height: 20vh;
   width: auto;
 }
+
+
 }
 
 
