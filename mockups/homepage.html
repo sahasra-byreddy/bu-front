@@ -171,6 +171,64 @@
                  </div>
         </section>
 
+
+         <section id="consection">
+          <div id="con-photo">
+              <img src="assets/conpage/title_contrib.png" alt="I want to contribute" class="con-pictures">
+              <img src="assets/conpage/img_contrib.png" alt="I want to contribute" class="con-pictures">
+          </div>
+          <div id="con-choose">
+            <div id="con-buttons">
+              <button id="button1" class="con-button">Info</button>
+              <button id="button2" class="con-button">Contribute</button>
+              <button id="button3" class="con-button">Merch</button>
+            </div>
+
+            
+            <div id="con-paragraph">
+              <p id="paragraph1">This is paragraph 1.</p>
+              <p id="paragraph2" class="hidden">This is paragraph 2.</p>
+              <p id="paragraph3" class="hidden">This is paragraph 3.</p>
+          
+            </div>
+
+              <script>
+                  const button1 = document.getElementById('button1');
+                  const button2 = document.getElementById('button2');
+                  const button3 = document.getElementById('button3');
+                  const paragraph1 = document.getElementById('paragraph1');
+                  const paragraph2 = document.getElementById('paragraph2');
+                  const paragraph3 = document.getElementById('paragraph3');
+
+                  button1.addEventListener('click', () => {
+                      paragraph1.style.display = 'block';
+                      paragraph2.style.display = 'none';
+                      paragraph3.style.display = 'none';
+                  });
+
+                  button2.addEventListener('click', () => {
+                      paragraph1.style.display = 'none';
+                      paragraph2.style.display = 'block';
+                      paragraph3.style.display = 'none';
+                  });
+
+                  button3.addEventListener('click', () => {
+                      paragraph1.style.display = 'none';
+                      paragraph2.style.display = 'none';
+                      paragraph3.style.display = 'block';
+                  });
+              </script>
+          </div>
+          <div id="con-bg"></div>
+
+    </section>
+
+
+
+
+
+
+
           <section class="homesection-mobile mobile">  
                 <img src="assets/homepage/signin_lizard_desktop.png" alt="Lizard SignIn Signup" id="lizardm">
                 <img src="assets/homepage/know_more_desktop.png" alt="Know More" id="knowm">
