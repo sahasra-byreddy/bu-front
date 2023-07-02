@@ -186,9 +186,64 @@
 
             
             <div id="con-paragraph">
-              <p id="paragraph1">This is paragraph 1.</p>
-              <p id="paragraph2" class="hidden">This is paragraph 2.</p>
-              <p id="paragraph3" class="hidden">This is paragraph 3.</p>
+              <div id="paragraph1">
+                <h1 class="con-info-title">Things U Help Us Do</h1>
+                <ul style="color: white">
+                  <li><p class="con-info-text">Build a 100% free database of resources withj ways to save them</p></li>
+                  <li><p class="con-info-text">Maintain our internship program of 10 teams that produce all we do</p></li>
+                  <li><p class="con-info-text">Support our annual free event for HS students from all over the world</p></li>
+                </ul>
+                <h1 class="con-info-title">Things U Get for Your Support</h1>
+                <ul style="color: white">
+                  <li><p class="con-info-text">A gift card U can use in our U-Shop &</p></li>
+                  <li><p class="con-info-text">Our sincerest thanks and appreciation</p></li>
+                </ul>
+              </div>
+
+              <div id="paragraph2" class="hidden">
+                <h1 id="con-c-title">Tell us who to thank and select an amount of support</h1>
+
+                <div id="con-c-form">
+                  <div id="con-c-form-text">
+                    <p class="con-c-ft" style="margin-top:2vh;">Name</p>
+                    <p class="con-c-ft">Email</p>
+                    <p class="con-c-ft" style="margin-top:2.5vh;">Your Support</p>
+                  </div>
+                
+                  <div id="con-c-form-form" style="display: flex; flex-direction: column;">
+                    <input type="text" name="name" class="con-c-ff" style="margin-top:2vh;">
+                    <input type="email" name="email" class="con-c-ff" >
+                    <input type="text" name="support" placeholder="US$" class="con-c-ff">
+                  </div>
+                </div>
+
+                <div class="con-c-support">
+                  <div id="con-c-support-up">
+                    <input type="radio" id="US10" name="radio" value="US10" class="con-c-su" checked>
+                    <label for="US10"><p class="con-csud">US$10</p></label>
+                
+                    <input type="radio" id="US20" name="radio" class="con-c-su" value="US20">
+                    <label for="US20"><p class="con-csud">US$20</p></label>
+                
+                    <input type="radio" id="US40" name="radio" class="con-c-su" value="US40">
+                    <label for="US40"><p class="con-csud">US$40</p></label> 
+                  </div>
+                  <div id="con-c-support-down">
+                    <input type="radio" id="US60" name="radio" class="con-c-sd" value="US60">
+                    <label for="US60"><p class="con-csud">US$60</p></label>
+
+                    <input type="radio" id="US80" name="radio" class="con-c-sd" value="US80">
+                    <label for="US80"><p class="con-csud">US$80</p></label>
+
+                    <input type="radio" id="US100" name="radio" class="con-c-sd" value="US100">
+                    <label for="US100"><p class="con-csud">US$100</p></label>
+                  </div>
+                </div>
+
+                <input type="button" value="Next" id="con-c-next1">
+
+              </div>
+              <div id="paragraph3" class="hidden">This is paragraph 3.</div>
           
             </div>
 
