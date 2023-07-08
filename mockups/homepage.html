@@ -12,7 +12,7 @@
         
     </head>    
     <body>
-
+        <div id="desktop">
               
           <!--bar/header for desktop-->
             <nav id="bar" class="desktop">
@@ -64,7 +64,7 @@
                           <p class = 'home-sbar desktop' id="home-sbar-word"><cite>Gobble, Gobble, Gobble, Gobble...</cite>Mr. Turkey</p>
                         </div>
                         <a href="#">
-                             <img src= "assets/homepage/hamburger.png" alt = "open menu" id="menu" class="upbar mobile">
+                             <!--img src= "assets/homepage/hamburger.png" alt = "open menu" id="menu" class="upbar mobile"-->
                         </a>
                      </div>
            
@@ -283,11 +283,12 @@
 
 
 
-
+          <!--
           <section class="homesection-mobile mobile">  
                 <img src="assets/homepage/signin_lizard_desktop.png" alt="Lizard SignIn Signup" id="lizardm">
                 <img src="assets/homepage/know_more_desktop.png" alt="Know More" id="knowm">
           </section>
+        -->
             
 
           <div id="seperatebottom">
@@ -295,9 +296,6 @@
           
           <!--Not done-->
           <footer>
-            <div id = 'info' class='mobile'>
-                <h1>We need to write here a little explanation.</h1>
-            </div>
             <!--powerby-->
             <div class="desktop" id="partner">
                 <div>
@@ -318,5 +316,99 @@
             </div>  
           </footer>
         </div>
+
+
+        <div id="mobile">
+          
+
+          <section id="sectionmenu" class="hidden">
+            <div id="menu-phonebar">
+              <img src ="assets/homepage/logo_white.png" alt='buildingu logo' id="menu-bar-logo">
+              <button id="menu_signinbutton"><img src = "assets/menupage/01-logo-signup.png" id="menu-signin"></button>
+              <button id="menu_bar_menubutton"><img src= "assets/homepage/hamburger_active.png" alt = "open menu" id="menu-menuimage"></button>
+            </div>
+
+            <div id="menu-button">
+              <button class="menu-option">
+                <img src="assets/menupage/02-logo-resources.png" class="menu-images">
+              </button>
+              <button class="menu-option">
+                <img src="assets/menupage/03-logo-blogandbeyond.png" class="menu-images">
+              </button>
+              <button class="menu-option">
+                <img src="assets/menupage/04-logo-letstalk.png" class="menu-images">
+              </button>
+              <button class="menu-option">
+                <img src="assets/menupage/05-btn-S4YT.png" class="menu-images">
+              </button>
+              <button class="menu-option">
+                <img src="assets/menupage/06-logo-contrib.png" class="menu-images">
+              </button>
+            </div>
+          </section>
+
+          <section id="sectionhome">
+            <div id="home-phonebar">
+              <img src ="assets/homepage/logo.png" alt='buildingu logo' id="home-bar-logo">
+              <button id="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" id="home-bar-menuimage"></button>
+            </div>
+
+            <div id="home-up">
+              <img src="assets/homepage/signin_lizard_desktop.png" alt="lizard" id="home-lizard">
+            </div>
+            <div id="home-down">
+              <img src="assets/homepage/know_more_desktop.png" alt="know more" id="home-know">
+              <h1 id="home-word">We need to write here a little explanation.</h1>
+            </div>
+
+          </section>
+
+          <script>
+            const home_bar_menubutton = document.getElementById('home_bar_menubutton');
+            const sectionmenu = document.getElementById('sectionmenu');
+            const partner = document.getElementById('footer');
+            const menu_bar_menubutton = document.getElementById('menu_bar_menubutton');
+       
+
+            home_bar_menubutton.addEventListener('click', () => {
+                sectionmenu.style.display = 'block';
+                sectionmenu.style.position = 'absolute';
+                footer.style.display = 'none';
+            });
+
+            menu_bar_menubutton.addEventListener('click', () => {
+                sectionmenu.style.display = 'none';
+                footer.style.display = 'block';
+            });
+
+          </script>
+
+
+
+          <footer id="footer">
+            <div id="partner">
+              <div>
+                <h2 id="powerbyt">Powered by</h2>
+              </div>
+
+              <div>
+                <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+              </div>
+
+              <div>
+                <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+              </div>
+
+              <div>
+                <img src="assets/homepage/powerby.png" alt="sponsor" class="sponsor">
+              </div>
+            </div>  
+
+          </footer>
+        </div>
+
+
+
+
     </body>
 </html>
