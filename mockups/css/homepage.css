@@ -163,7 +163,7 @@ z-index: 1;
   flex-direction:column;
   background-color: #008dd2;
   width:100%;
-  height:72.5vh;
+  height:75vh;
   background-image: url(../assets/homepage/bg_mobile.png);
   justify-content: space-between;
 }
@@ -234,7 +234,7 @@ z-index: 1;
 }
 
 #resources-bg{
-  border-bottom: 72.5vh solid #ea0f81;
+  border-bottom: 75vh solid #ea0f81;
 	border-left: 0px solid transparent;
 	border-right: 50vh solid transparent;
 	height: 0;
@@ -248,7 +248,7 @@ z-index: 1;
   flex-direction:column;
   background-color: #ea0f81;
   width:100%;
-  height:72.5vh;
+  height:75vh;
   background-image: url(../assets/homepage/bg_mobile.png) ;
   justify-content: space-between;
 }
@@ -316,7 +316,7 @@ z-index: 1;
 }
 
 #bandb-bg{
-  border-bottom: 72.5vh solid #68b436;
+  border-bottom: 75vh solid #68b436;
 	border-left: 50vh solid transparent;
 	border-right: 0vh solid transparent;
 	height: 0;
@@ -331,7 +331,7 @@ z-index: 1;
     flex-direction: column;
     background-color: #68b436;
     width:100%;
-    height:72.5vh;
+    height:75vh;
     background-image: url(../assets/homepage/bg_mobile.png)  ;
     justify-content: space-between;
 }
@@ -387,7 +387,7 @@ z-index: 1;
 }
 
 #talk-bg{
-  border-bottom: 72.5vh solid #008dd2;
+  border-bottom: 75vh solid #008dd2;
 	border-left: 0px solid transparent;
 	border-right: 50vh solid transparent;
 	height: 0;
@@ -401,7 +401,7 @@ z-index: 1;
   flex-direction:row;
   background-color: #68b436;
   width:100%;
-  height:72.5vh;
+  height:75vh;
   background-image: url(../assets/dollarpage/background.png) ;
   justify-content: space-between;
 }
@@ -473,7 +473,7 @@ margin-right:5vw;
   flex-direction:row;
   background-color: #008dd2;
   width:100%;
-  height:72.5vh;
+  height:75vh;
   background-image: url(../assets/homepage/bg_mobile.png) ;
   justify-content: space-between;
 }
@@ -636,7 +636,7 @@ border-color: #4c4;
 }
 
 #con-bg{
-  border-bottom: 72.5vh solid #ea0f81;
+  border-bottom: 75vh solid #ea0f81;
 	border-left: 0px solid transparent;
 	border-right: 50vh solid transparent;
 	height: 0;
@@ -716,6 +716,11 @@ footer{
       background-color: #ef7f1a;
   }
 
+  #menu_homebutton{
+    background-color: transparent;
+    border-color: transparent;
+  }
+
   #menu-bar-logo{
     margin-top: 2.5vh;
     height:13.5vh;
@@ -751,7 +756,7 @@ footer{
     height:16.4vh;
     margin:0;
     border-width: 0px;
-    background-color: #68b436;
+    background-color: #ef7f1a;
   }
 
   .menu-images{
@@ -777,14 +782,14 @@ footer{
     height:13.5vh;
   }
 
-  #home_bar_menubutton{
+  .home_bar_menubutton{
     margin-top: 2.5vh;
     height:13.5vh;
     background-color: transparent;
     border-color: transparent;
   }
 
-  #home-bar-menuimage{
+  .home-bar-menuimage{
     height:13.5vh;
   }
 
@@ -823,6 +828,81 @@ footer{
     margin-left: 7.5vw;
     color: #ffffff;
   }
+
+  #resource-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #resource-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+
+  #bandb-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #bandb-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+
+  #talk-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #talk-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+
+  #s4yt-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #s4yt-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
+
+  #con-phonebar{
+    width:100%;
+    height:18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ef7f1a;
+  }
+
+  #con-bar-logo{
+    margin-top: 2.5vh;
+    height:13.5vh;
+  }
+
 
 
 

@@ -69,9 +69,31 @@
                      </div>
            
             </div>
+
+            <script>
+
+              const element = document.getElementById('home-aside');
+          
+          window.addEventListener('scroll', () => {
+              const scrollPosition = window.scrollY;
+          
+              
+              let x = scrollPosition / (window.innerHeight);
+              if(scrollPosition < (window.innerHeight*0.75)){
+                  x = 0;
+              }
+              
+              const opacity = 1 - x;
+          
+          
+              
+              element.style.opacity = opacity.toFixed(2);
+          });
+          
+          
+              </script>
            
-          <div id="seperatetop">
-          </div>
+          <div id="seperatetop"></div>
         
           <!--Section--green part-->
           <section class="desktop" id="homesection">
@@ -277,12 +299,6 @@
           <div id="con-bg"></div>
 
     </section>
-
-
-
-
-
-
           <!--
           <section class="homesection-mobile mobile">  
                 <img src="assets/homepage/signin_lizard_desktop.png" alt="Lizard SignIn Signup" id="lizardm">
@@ -318,31 +334,43 @@
         </div>
 
 
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!-----------------------------phone----------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+
+
+
         <div id="mobile">
           
 
           <section id="sectionmenu" class="hidden">
             <div id="menu-phonebar">
-              <img src ="assets/homepage/logo_white.png" alt='buildingu logo' id="menu-bar-logo">
+              <button id="menu_homebutton"><img src ="assets/homepage/logo_white.png" alt='buildingu logo' id="menu-bar-logo"></button>
               <button id="menu_signinbutton"><img src = "assets/menupage/01-logo-signup.png" id="menu-signin"></button>
               <button id="menu_bar_menubutton"><img src= "assets/homepage/hamburger_active.png" alt = "open menu" id="menu-menuimage"></button>
             </div>
 
             <div id="menu-button">
-              <button class="menu-option">
-                <img src="assets/menupage/02-logo-resources.png" class="menu-images">
+              <button class="menu-option" id="resource_button">
+                <img src="assets/menupage/02-btn-resources (1).png" class="menu-images">
               </button>
-              <button class="menu-option">
-                <img src="assets/menupage/03-logo-blogandbeyond.png" class="menu-images">
+              <button class="menu-option" id="bandb_button">
+                <img src="assets/menupage/03-btn-blogandbeyond (1).png" class="menu-images">
               </button>
-              <button class="menu-option">
-                <img src="assets/menupage/04-logo-letstalk.png" class="menu-images">
+              <button class="menu-option" id="talk_button">
+                <img src="assets/menupage/04-btn-letstalk (1).png" class="menu-images">
               </button>
-              <button class="menu-option">
+              <button class="menu-option" id="s4yt_button">
                 <img src="assets/menupage/05-btn-S4YT.png" class="menu-images">
               </button>
-              <button class="menu-option">
-                <img src="assets/menupage/06-logo-contrib.png" class="menu-images">
+              <button class="menu-option" id="con_button">
+                <img src="assets/menupage/06-btn-contrib (1).png" class="menu-images">
               </button>
             </div>
           </section>
@@ -350,7 +378,7 @@
           <section id="sectionhome">
             <div id="home-phonebar">
               <img src ="assets/homepage/logo.png" alt='buildingu logo' id="home-bar-logo">
-              <button id="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" id="home-bar-menuimage"></button>
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
             </div>
 
             <div id="home-up">
@@ -360,26 +388,166 @@
               <img src="assets/homepage/know_more_desktop.png" alt="know more" id="home-know">
               <h1 id="home-word">We need to write here a little explanation.</h1>
             </div>
+          </section>
 
+          <section id="sectionresource" class="hidden">
+            <div id="resource-phonebar">
+              <img src ="assets/menupage/02-btn-resources (1).png" alt='buildingu logo' id="resource-bar-logo">
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
+            </div>
+            <div id="resources-options">
+              <img src = "assets/resourcespage(phone)/btn-01_education.png" alt="option">
+              <img src = "assets/resourcespage(phone)/btn-02_opportunities.png" alt="option">
+              <img src = "assets/resourcespage(phone)/btn-03_contests.png" alt="option">
+            </div>
+            <div id="resources-pinksection">
+              <p>We have to write What are resources</p>
+              <img src = "assets/resourcespage(phone)/lizard.png" alt="lizard">
+            </div>
+          </section>
+
+
+          <section id="sectionbandb" class="hidden">
+            <div id="bandb-phonebar">
+              <img src ="assets/menupage/03-btn-blogandbeyond (1).png" alt='buildingu logo' id="bandb-bar-logo">
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
+            </div>
+          </section>
+
+
+          <section id="sectiontalk" class="hidden">
+            <div id="talk-phonebar">
+              <img src ="assets/menupage/04-btn-letstalk (1).png" alt='buildingu logo' id="talk-bar-logo">
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
+            </div>
+          </section>
+
+          <section id="sections4yt" class="hidden">
+            <div id="s4yt-phonebar">
+              <img src ="assets/menupage/05-btn-S4YT.png" alt='buildingu logo' id="s4yt-bar-logo">
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
+            </div>
+          </section>
+
+          <section id="sectioncon" class="hidden">
+            <div id="con-phonebar">
+              <img src ="assets/menupage/06-btn-contrib (1).png" alt='buildingu logo' id="con-bar-logo">
+              <button class="home_bar_menubutton"><img src= "assets/homepage/hamburger.png" alt = "open menu" class="home-bar-menuimage"></button>
+            </div>
           </section>
 
           <script>
-            const home_bar_menubutton = document.getElementById('home_bar_menubutton');
+            const home_bar_menubuttons = document.querySelectorAll('.home_bar_menubutton');
+            const active_menubutton = document.getElementById('menu_bar_menubutton');
+            const menu_homebutton = document.getElementById('menu_homebutton');
+
+            const resource_button = document.getElementById('resource_button');
+            const bandb_button = document.getElementById('bandb_button');
+            const talk_button = document.getElementById('talk_button');
+            const s4yt_button = document.getElementById('s4yt_button');
+            const con_button = document.getElementById('con_button');
+
+
             const sectionmenu = document.getElementById('sectionmenu');
+            const sectionhome = document.getElementById('sectionhome');
             const partner = document.getElementById('footer');
-            const menu_bar_menubutton = document.getElementById('menu_bar_menubutton');
+
+            const sectionresource = document.getElementById('sectionresource');
+            const sectionbandb = document.getElementById('sectionbandb');
+            const sectionretalk = document.getElementById('sectiontalk');
+            const sectionres4yt = document.getElementById('sectionres4yt');
+            const sectionrecon = document.getElementById('sectioncon');
+            
        
 
-            home_bar_menubutton.addEventListener('click', () => {
+            home_bar_menubuttons.forEach(button => {
+            button.addEventListener('click', () => {
                 sectionmenu.style.display = 'block';
                 sectionmenu.style.position = 'absolute';
                 footer.style.display = 'none';
             });
-
-            menu_bar_menubutton.addEventListener('click', () => {
+            });
+       
+            active_menubutton.addEventListener('click', () => {
                 sectionmenu.style.display = 'none';
                 footer.style.display = 'block';
             });
+
+            menu_homebutton.addEventListener('click', () => {
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'block';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='none';
+                sectionbandb.style.display='none';
+                sectiontalk.style.display='none';
+                sections4yt.style.display='none';
+                sectioncon.style.display='none';
+            });
+
+            resource_button.addEventListener('click', () =>{
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'none';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='block';
+                sectionbandb.style.display='none';
+                sectiontalk.style.display='none';
+                sections4yt.style.display='none';
+                sectioncon.style.display='none';
+            })
+
+            bandb_button.addEventListener('click', () =>{
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'none';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='none';
+                sectionbandb.style.display='block';
+                sectiontalk.style.display='none';
+                sections4yt.style.display='none';
+                sectioncon.style.display='none';
+            })
+
+
+            talk_button.addEventListener('click', () =>{
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'none';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='none';
+                sectionbandb.style.display='none';
+                sectiontalk.style.display='block';
+                sections4yt.style.display='none';
+                sectioncon.style.display='none';
+            })
+
+            s4yt_button.addEventListener('click', () =>{
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'none';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='none';
+                sectionbandb.style.display='none';
+                sectiontalk.style.display='none';
+                sections4yt.style.display='block';
+                sectioncon.style.display='none';
+            })
+
+            con_button.addEventListener('click', () =>{
+                sectionmenu.style.display = 'none';
+                sectionhome.style.display = 'none';
+                footer.style.display = 'block';
+
+                sectionresource.style.display='none';
+                sectionbandb.style.display='none';
+                sectiontalk.style.display='none';
+                sections4yt.style.display='none';
+                sectioncon.style.display='block';
+            })
+
+
+            
 
           </script>
 
