@@ -843,6 +843,44 @@ footer{
     height:13.5vh;
   }
 
+  #resources-blue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #008dd2;
+    height: 50vh;
+    align-items: center;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  .resources-options{
+    height: 10vh;
+    margin-bottom: 3vh;
+  }
+
+  #resources-pink{
+    background-color: #ea0f81;
+    display: flex;
+    flex-direction: row;
+    height:25vh;
+  }
+
+  #resources-pinktext{
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-top: 2.5vh;
+    color: #ffffff;
+  }
+
+  #resources-pinklizard{
+    height:20vh;
+    margin-top: 2.5vh;
+    margin-right:5vw;
+  }
+
+ 
+
 
   #bandb-phonebar{
     width:100%;
@@ -856,6 +894,41 @@ footer{
   #bandb-bar-logo{
     margin-top: 2.5vh;
     height:13.5vh;
+  }
+
+  #bandb-pink{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    background-color: #ea0f81;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  .bandb-choice{
+    height:20vh;
+  }
+
+  #bandb-green{
+    background-color: #68b436;
+    display: flex;
+    flex-direction: row;
+    height:25vh;
+  }
+
+  #bandb-greentext{
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-top: 2.5vh;
+    color: #ffffff;
+  }
+
+  #bandb-greengoat{
+    height:20vh;
+    margin-top: 2.5vh;
+    margin-right:5vw;
   }
 
 
@@ -920,6 +993,7 @@ footer{
 
   #powerbyt{
     font-family: 'coolvetica','coolvetica',serif;
+    color: #ffffff;
   }
 
   #partner{
