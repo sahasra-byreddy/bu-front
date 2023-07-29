@@ -431,14 +431,16 @@
               <img src ="assets/menupage/04-btn-letstalk (1).png" alt='buildingu logo' id="talk-bar-logo">
               <button class="home_bar_menubutton"><img src= "assets/menupage/01-logo-button-normal-white.png" alt = "open menu" class="home-bar-menuimage"></button>
             </div>
-            <div id="talk-blue">
-              <img src="assets/talkpage(phone)/dog (1).png">
-            </div>
-            <div id="talk-green">
-              <img src="assets/talkpage(phone)/btn-01_aboutus.png">
-              <img src="assets/talkpage(phone)/btn-02_ourinternship.png">
-              <img src="assets/talkpage(phone)/btn-03_connect.png">
-              <img src="assets/talkpage(phone)/btn-04_partner.png">
+            <div id="talk-phonecontent">
+              <div id="talk-blue">
+                <img src="assets/talkpage(phone)/dog (1).png" id="talk-bluephoto">
+              </div>
+              <div id="talk-green">
+                <img src="assets/talkpage(phone)/btn-01_aboutus.png" class="talk-greenoptions">
+                <img src="assets/talkpage(phone)/btn-02_ourinternship.png" class="talk-greenoptions">
+                <img src="assets/talkpage(phone)/btn-03_connect.png" class="talk-greenoptions">
+                <img src="assets/talkpage(phone)/btn-04_partner.png" class="talk-greenoptions">
+              </div>
             </div>
           </section>
 
@@ -447,11 +449,30 @@
               <img src ="assets/menupage/05-btn-S4YT.png" alt='buildingu logo' id="s4yt-bar-logo">
               <button class="home_bar_menubutton"><img src= "assets/menupage/01-logo-button-normal-white.png" alt = "open menu" class="home-bar-menuimage"></button>
             </div>
-            <img src ='assets/dollarpage(phone)/logo_dollars.png'>
-            <div id="s4yt-topsec">
+            <div id="s4yt-content">
+                    <img src ='assets/dollarpage(phone)/logo_dollars.png' id="s4yt-rectangle">
+                    <div id='s4yt-bothsec'>  
+                      <div id = "s4yt-leftsec">
+                          <p class='s4yt-bigwords'>$4YT or dollars for your thoughts</p>
+                          <hr class="s4yt_line">
+                          <p class='s4yt-smallwords'>Is our annual free funding event for high schoolers from all over the world</p>
 
-            </div>
-            <div id="s4yt-bottomsec">
+                          <p class='s4yt-bigwords s4yt-secondbigword'>Contribute to $4YT</p>
+                          <hr class="s4yt_line">
+                          <p class='s4yt-smallwords'>Our teams of high school students build the game and develop the campaigns to produce it.</p>
+
+                          
+                      </div>  
+                      <div id = "s4yt-rightsec">
+                          <img src = "assets/dollarpage/btn-contrib-normal.png" alt="contribute" class="s4yt-tag">
+                          <div id='s4yt-sectag'>
+                              <p class="s4yt-texttag">Visit our</p>
+                              <img src = "assets/dollarpage/btn-more_info-normal.png" alt="idkyet" class="s4yt-tag">
+                              <p class="s4yt-texttag">To help them reach this year funding goal</p>
+                          </div>
+                    </div>
+                  </div>
+                  <img src = "assets/dollarpage/img_weare-05.png" alt="boat" id="s4yt-boat">
 
             </div>
           </section>
@@ -484,6 +505,8 @@
             const sectionretalk = document.getElementById('sectiontalk');
             const sectionres4yt = document.getElementById('sectionres4yt');
             const sectionrecon = document.getElementById('sectioncon');
+
+        
             
        
 
@@ -492,6 +515,7 @@
                 sectionmenu.style.display = 'block';
                 sectionmenu.style.position = 'absolute';
                 footer.style.display = 'none';
+          
             });
             });
        

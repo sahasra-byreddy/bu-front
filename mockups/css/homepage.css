@@ -946,6 +946,33 @@ footer{
     height:13.5vh;
   }
 
+  #talk-phonecontent{
+    background-color: #68b436;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+    height: 75vh;
+  }
+  
+  #talk-blue{
+    display: flex;
+    justify-content: center;
+  }
+
+  #talk-bluephoto{
+    width: 65vw;
+  }
+
+  #talk-green{
+    display:inline-block;
+    width:85vw;
+    margin-left: 5vw;
+    height:40vh;
+  }
+
+  .talk-greenoptions{
+    margin-top: 2vh;
+    height: 5vh;
+    width: auto;
+  }
 
   #s4yt-phonebar{
     width:100%;
@@ -959,7 +986,94 @@ footer{
   #s4yt-bar-logo{
     margin-top: 2.5vh;
     height:13.5vh;
+
   }
+
+  #s4yt-content{
+    background-color: #68b436;
+    background-image: url(../assets/dollarpage/background.png) ;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #s4yt-rectangle{
+    width:60vw;
+    margin-left: 20vw;
+    margin-top: 3vh;
+  }
+
+  #s4yt-bothsec{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 0vh;
+    height: 33vh;
+}
+
+#s4yt-leftsec{
+    align-items: center;
+    width:50vw;
+    float:left;
+    margin-left:5vw;
+    margin-top: 2vh;
+    height: 50vh;
+}
+
+.s4yt-bigwords{
+    font-size: 4vw;
+    margin-bottom: 0;
+    font-family: "NightZone","NightZone",serif;
+}
+
+.s4yt_line{
+    width:80%;
+    float:left;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index:-1;
+    display:flex;
+
+}
+
+.s4yt-smallwords{
+    margin-top:2.5vh;
+    width:40vw;
+    font-size: 2.5vw;
+    margin-top: 0vh;
+    margin-bottom: 0;
+}
+
+.s4yt-secondbigword{
+    margin-top: 0vh;
+}
+
+#s4yt-rightsec{
+    width:40vw;
+    margin-top:5vh;
+}
+
+.s4yt-tag{
+    width:30vw;
+    margin:0px;
+}
+
+.s4yt-texttag{
+    font-size:2.5vw;
+    margin:0px;
+}
+
+#s4yt-sectag{
+    margin-top:5vh;
+}
+
+
+
+#s4yt-boat{
+    width:50vw;
+    height: auto;
+    margin-left: 25vw;
+}
+
 
 
   #con-phonebar{

@@ -217,6 +217,59 @@ footer{
         align-items: center;
   }
 
+
+    #s4yt-bothsec{
+        display:flex;
+        flex-direction: row;
+    }
+
+    #s4yt-leftsec{
+        align-items: center;
+        width:50vw;
+        float:left;
+        margin-left:5vw;
+        margin-top: 5vh;
+    }
+
+    #s4yt-bigwords{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    hr{
+        width:70%;
+        float:left;
+    }
+
+    .s4yt-smallwords{
+        margin-top:2.5vh;
+        width:40vw;
+        font-size: 2.5vw;
+        margin-top: 3vh;
+    }
+
+    .s4yt-secondbigword{
+        margin-top: 5vh;
+    }
+
+    #s4yt-rightsec{
+        width:40vw;
+        margin-top:5vh;
+    }
+
+    .s4yt-tag{
+        width:30vw;
+        margin:0px;
+    }
+
+    .s4yt-texttag{
+        font-size:2.5vw;
+        margin:0px;
+    }
+
+    #s4yt-sectag{
+        margin-top:10vh;
+    }
  
 
     
@@ -229,60 +282,25 @@ footer{
        
     }
 
-    #midsec{
-        align-items: center;
-        width:50vw;
-        float:left;
-        margin-left:5vw;
-        margin-top: 5vh;
-    }
+    
 
 
-    .tag{
-        width:30vw;
-        margin:0px;
-    }
+    
 
-    #rightsec{
-        width:40vw;
-        margin-top:5vh;
+   
 
-    }
+    
 
-    #bothsec{
-        display:flex;
-        flex-direction: row;
+    
 
-    }
+    
 
-    .texttag{
-        font-size:2.5vw;
-        margin:0px;
-    }
+    
 
-    hr{
-        width:70%;
-        float:left;
-    }
+    
 
-    .sword{
-        margin-top:2.5vh;
-        width:40vw;
-        font-size: 2.5vw;
-        margin-top: 3vh;
-    }
+    
 
-    #bword{
-        font-size: 5vw;
-        margin-bottom: 0;
-    }
-
-    #sectag{
-        margin-top:10vh;
-    }
-
-    .secword{
-        margin-top: 5vh;
-    }
+    
 
 }
