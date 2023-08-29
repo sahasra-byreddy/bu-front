@@ -1090,7 +1090,109 @@ footer{
     height:13.5vh;
   }
 
+  #con-firstpage{
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+    height:75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .con-m-buttons{
+    width:40vw;
+    height:8vh;
+    border-radius: 2vh;
+    margin-bottom: 1vh;
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    border-width: 0.5vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 3vh;
+    margin-left: 30vw;
+  }
+
+  #con-infopage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #ci-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #ci-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+  #con-conpage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #cc-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #cc-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+  #con-merchpage{
+    height:75vh;
+    background-color: #008dd2;
+    background-image: url(../assets/homepage/bg_mobile.png) ;
+  }
+
+  #cm-top{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: space-around;
+  }
+
+  #cm-content{
+    width: 75vw;
+    margin-left: 12.5vw;
+    background-color: #68b436;
+    border-radius: 3vh;
+  }
+
+
+  .con-title{
+    color:#fff;
+    font-size: 5vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    margin-top: 1.7vh;
+  }
+
+  .con-back{
+    width:25vw;
+    height:8vh;
+    border-radius: 2vh;
+    background-color: #ef7f1a;
+    color:#fff;
+    border-width: 0vh;
+    font-family: 'coolvetica','coolvetica',serif;
+    font-size: 3vh;
+    margin-left: 30vw;
+    margin-top: 1vh;
+  }
 
 
   footer{
