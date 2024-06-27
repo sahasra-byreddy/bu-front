@@ -1,5 +1,5 @@
 # bu-front
-Welcome interns! This is the official repository for building-U's new website(web app), here I'll explain the 'guidelines' you'll be following to we can all stay organized, consist across the project.
+Welcome interns! This is the official repository for building-U's new website(web app), here I'll explain the `guidelines` you'll be following to ensure we stay organized and consistent across the project.
 
 ## Technologies
 This is a `React` application built using `Vite` and utilizes `CSS modules` for styling. `NPM` is our package manager.
