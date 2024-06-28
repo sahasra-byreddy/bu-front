@@ -2,7 +2,7 @@
 Welcome interns! This is the official repository for building-U's new website(web app), here I'll explain the `guidelines` you'll be following to ensure we stay organized and consistent across the project.
 
 ## Technologies
-This is a `React` application built using `Vite` and utilizes `CSS modules` for styling. `NPM` is our package manager.
+This is a `React` application built using `Vite` and utilizes `CSS modules` for styling. `NPM` is our package manager, and `react-router-dom` is also used for routing.
 
 ## Vite
 We are using `Vite` instead of `create-react-app`. I don't need to go into to much detail about `Vite` because you wouldn't need to worry about it, but `Vite` is a modern build tool that makes the development process faster and more efficient. It provides quicker build times and faster updates when you make changes to your code through Vite's fast hot module replacement (HMR), which all helps to improve the development experience.
@@ -104,13 +104,19 @@ logger('Hello, World!');
 ### Directory Structure
 ...TODO
 
+## react-router-dom and SSR
+...TODO
+
 ## Getting Started
 
 ### Prerequisites
 - `Nodejs` version 20 or greater.
 - `NPM` version 10 or greater.
 
-To first get started, install all the packages listed in the `package.json` by doing a `npm install`. Then you'll have to create your team's branch. Since we are working by pages, you'll create your `branch by page`, for example, `page/home`. When you create your branch, make sure you're on your branch. Then run the dev command to start the development environment.
+### Steps
+1. To first get started, install all the packages listed in the `package.json` by doing an `npm install`.
+2. While still in the main branch, create a file called `.env.development` at the base of the project(the same level as package.json). We need this file because our SSR server depends on certain environment variables, like `NODE_ENV` to determine the environment mode. For development, we'll use .env.development. So, there is an `example.env.development` file to show you what variables to set. Just copy and paste the contents in the `example.env.development` and put that in the `.env.development` you created. The variable `PORT=`, after the equals, set it to 3000 and there you go!
+3. Now you'll have to create your team's branch. Since we are working by pages, you'll create your `branch by page`, for example, `page/home`. When you create your branch, make sure you're on your branch. Then run the dev command to start the development environment.
 
 ```
 $ npm install
@@ -133,3 +139,5 @@ You'll always be working in your `page/<page name>` branch. When you have comple
 https://www.freecodecamp.org/news/intro-to-react-components/ - React vs Static HTML
 
 https://www.freecodecamp.org/news/full-guide-to-react-hooks/ - Common Hook Guide (You don't need to use all of them shown there)
+
+https://www.dreamhost.com/blog/environment-variables/ - What are .env environment variables?
