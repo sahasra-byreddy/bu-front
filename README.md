@@ -58,11 +58,11 @@ const Component = () => {
 ```
 
 ## NPM
-`NPM` is a package manager and a runtime or whatever it's called. So, the `package.json` and `package-lock.json` are `NPM` files, our package manager is how we install the react package/dependency (dependency is another word for package) and other packages. 
+`NPM` (Node Package Manager) is a tool that helps you manage packages(also called dependencies) and run scripts for your project. The `package.json` file lists the packages your project depends on and includes script commands like `dev` that you can run. The `package-lock.json` file keeps track of the exact versions of the packages installed.
 
-In the `package.json` there are also the script commands, like the `dev` command. All you have to look at is the `package.json`, the `package-lock.json` is just all the...
+Whenever you need to add a package or run a command, you'll work in the `package.json` file. You generally don't need to worry about the `package-lock.json` file; it just ensures that everyone working on the project has the same package versions installed.
 
-You can go to https://www.npmjs.com/, to search other packages from developers if you fell like it.
+You can go to https://www.npmjs.com/, to search for other packages from developers if you're curious.
 
 ## Project Architecture
 In this project, we will be using a `reusable architecture` for all directories/files. This means **creating a new `component` only if it is used in more than one `page directory` or component.** The same rule applies to utils, hooks, constants, and other directories. This approach ensures that everything stays modular and organized.
