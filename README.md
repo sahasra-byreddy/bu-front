@@ -144,7 +144,7 @@ import s from "./styles.module.css";
 
 const DifferentHeader = () => {
   return (
-    <div>ass</div>
+    <header>DifferentHeader</div>
   )
 }
 
