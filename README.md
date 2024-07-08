@@ -144,7 +144,7 @@ const Whatever = () => {
   );
 };
 ```
-In the example above a **difference error** will happen since `useState` is only a client-side hook. The server doesn't run the JavaScript like the `useState`, it just renders the initial HTML. So, the server wouldn't know about the conditional rendering of the <div> element based on the show state, thus causing a difference in the server-rendered HTML and the client-rendered HTML.
+In the example above a **difference error** will happen since `useState` is only a client-side hook. The server doesn't run JavaScript like the `useState`, it just renders the initial HTML. So, the server wouldn't know about the conditional rendering of the `<div>` element based on the show state, since the initial state is true, thus causing a difference in the server-rendered HTML and the client-rendered HTML.
 
 _How to fix this difference:_
 ```JavaScript
@@ -165,9 +165,9 @@ const Whatever = () => {
   );
 };
 ```
-In the example above, the difference error is fixed by using a `useEffect` with an `empty dependency array []`, which makes the `useEffect` only run when the client loads. As a result, the `useEffect` runs after the server renders, making the server and client HTML match since the <div> is shown only on the client.
+In the example above, the difference error is fixed by using a `useEffect` with an `empty dependency array []`, the `useEffect` will only run when the client loads. As a result, the `useEffect` runs after the server renders, making the server and client HTML match since the `<div>` is shown only on the client.
 
-_Other important considerations:_
+_Other important considerations:_<br />
 Since our server is rendering our JSX initially, we have to be cautious when using client-specific things like the document, window, etc, on page load.
 ```JavaScript
 const Whatever = () => {
