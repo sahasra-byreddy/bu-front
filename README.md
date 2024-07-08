@@ -105,7 +105,7 @@ const Whatever = () => {
 You can find more information about `useNavigate` in the docs, **but you won't be using it**: https://reactrouter.com/en/main/hooks/use-navigate
 
 ### Link Component
-When we want to navigate programmatically(with a function), we use the `custom history object` as I mentioned above. For `link-based navigation`, you might think to use the <a> tag, but this will refresh the page, as it treats the link as a traditional HTML link(to another HTML file). Instead, we use the `<Link> component` to navigate without causing a refresh!
+When we want to navigate programmatically(with a function), we use the `custom history object` as I mentioned above. For `link-based navigation`, you might think to use the `<a>` tag, but this will refresh the page, as it treats the link as a traditional HTML link(to another HTML file). Instead, we use the `<Link> component` to navigate without causing a refresh!
 
 _We'll use links like this:_
 ```JavaScript
