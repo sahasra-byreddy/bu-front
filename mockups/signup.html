@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <nav id="navig" margin-left="0px">
+                <button>
+                    <img 
+                        src="assets/homepage/logo_white.png"
+                        alt="Building-U Logo in White"
+                        id="logo"
+                        class="navbar_buttons"
+                    />
+                </button>
+                <button>
+                    <img 
+                        src="assets/homepage/btn_06-signup.png"
+                        alt="Sign Up or Sign In Button in White"
+                        id="signup_signin"
+                        class="navbar_buttons"
+                    />
+                </button>
+    </nav>
+    <div>
+        <img src="assets/signuppage/title_signup.png" id="signup_text" class="signup">
+        <p class="signup" >Not registered?</p>
+        <!-- form -->
+        <form class="signup">
+            <label>First Name</label>
+            <br>
+                <input id="text_input" type="text" minlength="2" maxlength="30">
+            <br>
+            <br>
+            <label>Last Name</label>
+            <br>
+                <input id="text_input" type="text" minlength="2" maxlength="30">
+            <br>
+            <br>
+            <label>Email</label>
+            <br>
+                <input id="text_input" type="email">
+            <br>
+            <br>
+            <label>Password</label>
+            <br>
+                <input id="text_input" type="password" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@-$])">
+            <br>
+            <br>
+            <label>Confirm Password</label>
+            <br>
+                <input id="text_input" type="password">
+            <input id="submit_input" type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
