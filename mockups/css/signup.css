@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: "coolvetica";
+    src: url("../../fonts/coolvetica.otf")format('opentype');
+  }
+  
+
 body {
     background-color: #EA0F81;
     color: white;
@@ -23,7 +30,7 @@ body {
     border-radius: 5px;
     block-size: 50px;
     font-size: 32px;
-    margin-left: 200px;
+    margin-left: 25vw;
 }
 
 label {
@@ -35,9 +42,9 @@ img {
 }
 
 p {
-    font-size: 50px;
+    font-size: 3vw;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 #navig {
@@ -46,21 +53,15 @@ p {
     flex-direction: row;
     background-color: orange;
     width: 100%;
-    height: 15vh;
+    height: 10vw;
     position:fixed;
     top:0;
     left:0;
 }
 
-div {
+div:not(#mob-div) {
     margin-left:  60vw;
-    margin-top: 17vh;
-}
-
-#signup_text {
-    width: 65vh;
-    /* width: 600px; */
-    height: auto;
+    margin-top: 11vw;
 }
 
 #logo {
@@ -77,4 +78,141 @@ div {
 button {
     background-color: transparent;
     border-color: transparent;
+}
+
+h1 {
+    font-size: 6vw;
+    margin-bottom: 0px;
+}
+
+#menu {
+    visibility: hidden;
+}
+
+#enter-space{
+    visibility: hidden;
+}
+
+#back-button{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px){
+    
+    body {
+        background-color: #008DD2;
+        color: white;
+        background-image: url(../assets/signuppage/background.png);
+         /* url(assets/signuppage/background.png); */
+        font-family: "Corbel", "Corbel", serif;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+    #text_input {
+        background-color: transparent;
+        border-color: white;
+        border-radius: 5px;
+        block-size: 20px;
+        width: 80vw;
+        height: 4vh;
+        border-width: 2px;
+        margin-top: 0px;
+        border-style: solid;
+    }
+    
+    #submit_input {
+        background-color: #008DD2;
+        color: white;
+        border-color: transparent;
+        border-radius: 5px;
+        block-size: 50px;
+        font-size: 32px;
+        float: right;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    img {
+        background-color: transparent;
+    }
+    
+    p {
+        visibility: collapse;
+    }
+
+    h1 {
+        font-size: 14vw;
+        font-weight: 200;
+        font-family: 'coolvetica','coolvetica', serif;
+    }
+    
+    #navig {
+        margin-left:0px;
+        display:flex;
+        flex-direction: row;
+        background-color: #EF7F1A;
+        width: 100%;
+        height: 20vw;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    
+    #mob-div {
+        background-color: #EA0F81;
+        border-radius: 25px;
+        padding: 4vw;
+    }
+    
+    div:not(#mob-div) {
+        margin-left:  0vw;
+        margin-top: 22vw;
+    }
+    
+    
+    #logo {
+        margin-left: 6vw;
+        width: 25vw;
+    }
+    
+    #signup_signin {
+        visibility: hidden;
+    }
+    
+    button {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    #menu {
+        visibility: visible;
+        margin-left: 70vw;
+        margin-top: -10px;
+        width: 9vw;
+    }
+
+    #enter-space{
+        visibility: visible;
+    }
+
+    label {
+        font-size: 5vw;
+    }
+
+    #back-button{
+        visibility: visible;
+        background-color: #EA0F81;
+        color: white;
+        float: right;
+        display: flex;
+        border-radius: 15px;
+        font-size: 6vw;
+        width: 30vw;
+        margin-top: -15vw;
+        font-weight: 200;
+        font-family: 'coolvetica','coolvetica', serif;
+    }
 }
